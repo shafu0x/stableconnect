@@ -27,10 +27,6 @@
   border-bottom: none;
 }
 
-.payment-item:hover {
-  background-color: #f8f9fa;
-}
-
 .payment-info {
   display: flex;
   justify-content: space-between;
@@ -56,4 +52,9 @@
 
 .status-bad {
   color: #dc3545;
+}
+
+.loading-indicator {
+  font-style: italic;
+  color: #666;
 }

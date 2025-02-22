@@ -43,7 +43,13 @@ const Payments = () => {
             <span>{payment.name}</span>
             <span>${payment.amount}</span>
             <span className={payment.taxSetup ? "status-good" : "status-bad"}>
-              {payment.taxSetup ? "Complete" : "Missing"}
+              {loading ? (
+                <span className="loading-indicator">Loading...</span>
+              ) : payment.taxSetup ? (
+                "Complete"
+              ) : (
+                "Missing"
+              )}
             </span>
           </div>
         ))}
