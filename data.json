@@ -1,0 +1,32 @@
+[
+  {
+    "github_id": "123",
+    "amount": 1000,
+    "name": "Alice Johnson"
+  },
+  {
+    "github_id": "22",
+    "amount": 750,
+    "name": "Bob Smith"
+  },
+  {
+    "github_id": "55",
+    "amount": 1200,
+    "name": "Carol Williams"
+  },
+  {
+    "github_id": "66",
+    "amount": 500,
+    "name": "David Brown"
+  },
+  {
+    "github_id": "88",
+    "amount": 900,
+    "name": "Eva Martinez"
+  },
+  {
+    "github_id": "99",
+    "amount": 1500,
+    "name": "Frank Wilson"
+  }
+]

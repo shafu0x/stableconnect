@@ -3,6 +3,7 @@ import { base } from "viem/chains";
 import "./App.css";
 import { usePrivy } from "@privy-io/react-auth";
 import { useSmartWallets } from "@privy-io/react-auth/smart-wallets";
+import Payments from "../Payments";
 
 function App() {
   const { login, logout, ready, authenticated, user } = usePrivy();
@@ -31,8 +32,8 @@ function App() {
     };
     const transactionRequest = {
       chain: base,
-      to: "0xa94927442F5E8d313e7a8199f862D0C5D1c4E76C",
-      value: 10000000000000000,
+      to: "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      value: 10000000000000,
     };
     const txHash = await client.sendTransaction(transactionRequest, {
       uiOptions,
@@ -54,9 +55,10 @@ function App() {
         </button>
       ) : (
         <>
-          <button onClick={logout}>Log out</button>
+          {/* <button onClick={logout}>Log out</button>
           <button onClick={handleSign}>Sign Message</button>
-          <button onClick={handleSendTransaction}>Send Tx</button>
+          <button onClick={handleSendTransaction}>Send Tx</button> */}
+          <Payments />
         </>
       )}
     </div>
